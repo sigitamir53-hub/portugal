@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Nasional Portugal</title>
+    <style>
+        /* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Warna utama Portugal */
+:root {
+    --merah: #c70039;
+    --hijau: #006847;
+    --emas: #ffd700;
+    --putih: #f9f9f9;
+}
+
+/* Header */
+.header {
+    background-color: var(--merah);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--emas);
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://upload.wikimedia.org/wikipedia/commons/9/9a/Portugal_national_football_team_2018.jpg')
+                center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: var(--hijau);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--emas);
+    color: black;
+}
+
+/* Section umum */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Pemain */
+.players {
+    background-color: var(--putih);
+}
+
+.player-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid var(--merah);
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Prestasi */
+.achievements {
+    background-color: var(--hijau);
+    color: white;
+}
+
+.achievement-list {
+    margin-top: 20px;
+}
+
+.achievement-list .item {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--merah);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">🇵🇹 Portugal Football</div>
+        <div class="nav">
+            <a href="#home">Beranda</a>
+            <a href="#players">Pemain</a>
+            <a href="#achievements">Prestasi</a>
+            <a href="#contact">Kontak</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero" id="home">
+        <div class="hero-content">
+            <h1>Força Portugal!</h1>
+            <p>Kebanggaan bangsa di setiap laga sepak bola.</p>
+            <a href="#players" class="btn">Lihat Pemain</a>
+        </div>
+    </div>
+
+    <!-- Pemain -->
+    <div class="section players" id="players">
+        <h2>Pemain Bintang</h2>
+        <div class="player-list">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo">
+                <h3>Cristiano Ronaldo</h3>
+                <p>Kapten & Legenda Portugal</p>
+            </div>
+            <div class="card">
+                <img src="https://media.gettyimages.com/id/2205114605/photo/manchester-united-v-real-sociedad-de-futbol-uefa-europa-league-2024-25-round-of-16-second-leg.jpg?s=1024x1024&w=gi&k=20&c=g24t_gT327Ou5lpjTZ0gm8ETh0i_R6W9KNX7JpOhtsM=" alt="Bruno Fernandes">
+                <h3>Bruno Fernandes</h3>
+                <p>Gelandang Kreatif Manchester United</p>
+            </div>
+            <div class="card">
+                <img src="https://media.gettyimages.com/id/2220022167/photo/manchester-city-portraits-fifa-club-world-cup-2025.jpg?s=1024x1024&w=gi&k=20&c=OuNF0RNwyuj8kFdFUZynd9M3QSza83r-Ec47gCTIpyA=" alt="Bernardo Silva">
+                <h3>Bernardo Silva</h3>
+                <p>Playmaker Lincah dari Manchester City</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prestasi -->
+    <div class="section achievements" id="achievements">
+        <h2>Prestasi Portugal</h2>
+        <div class="achievement-list">
+            <div class="item">🏆 Juara Euro 2016</div>
+            <div class="item">🏆 Juara Nations League 2019</div>
+            <div class="item">🥈 Finalis Euro 2004</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" id="contact">
+        <p>© 2025 Tim Nasional Portugal | Dibuat oleh Fans 🇵🇹</p>
+    </div>
+</body>
+</html>
